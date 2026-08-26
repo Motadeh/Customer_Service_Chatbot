@@ -1,0 +1,16 @@
+you> the app is glitching
+bot> Before we proceed, I need to gather some more information to accurately document the issue you're experiencing. Please describe the bug in detail.
+
+Once I have the description, I will ask for the steps to reproduce it, and finally, your environment details (browser, OS, device). This will help me create a comprehensive bug report for our engineering team.
+
+you> when i click on the settings app, it redirects to the home page, hangs and then closes.
+bot> Thank you for providing the detailed bug description. Now, please provide the steps to reproduce the issue. This will help our engineering team understand and fix the problem more effectively.
+
+you> I click on the sidebar, and when it opens and i click on settings, the home page opens instead and the app hangs and closes after.
+bot> Thank you for providing the steps to reproduce the issue. Now, please provide your environment details, including the browser, operating system, and device you are using. This information is crucial for our engineering team to accurately diagnose and fix the problem.
+
+you> chrome, macOS, macBook
+bot> <thinking> The user has provided all the necessary information to create a bug report. I will now call the create_bug_report tool with the collected information. </thinking>
+
+[tool call] bugreports___create_bug_report
+Your bug report has been successfully filed with the ticket ID 0e76c973-f742-4374-bf29-8c8d3c6b8c60. Our engineering team will review and follow up on this issue. Thank you for helping us improve our app!
