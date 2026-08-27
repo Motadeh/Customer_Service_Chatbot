@@ -1,0 +1,28 @@
+General observation for all paths
+
+the app was always showing the thinking tag until it was told not to.
+
+
+platform question
+    - It had to be explicitly told to not assume answers
+
+General question
+    - Use case for category greetings like hi and hello were included.
+    - Has the customer is asked if anything else is needed, test words nothing and nothing else was added.
+
+Bug report
+    - In the duration of my test, I noticed that for bug reports, when a bug report similar to a previously logged
+    report is logged again, the bot replies that the bug has been logged before and responds with the ticket ID. 
+    - I also realized that initially, after the initial successful bug report, the bot no longer request for the users
+    environment until it was added in the prompt to include it.
+    - When tested using messages that could contain two categories, only one was selected until the prompt addressed it
+    and most of those questions were answered correctly for both categories.
+
+Guardrail
+    - When guardrail was included, it correctly caught prompt injection to ignore instructions and also messages that had
+    offensive languages when run on the terminal as shown in the screenshot, Guardrail_for_harness under the testing and evaluation folder.
+    - The guardrail, however did not seem to work when running the evaluation script.
+
+
+On testing
+    - The result were mostly 0.9 as the guardrail is not implemented for the offensive language question.
